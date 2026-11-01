@@ -1,14 +1,14 @@
-# Saudi Real Estate: What Can SAR 1M Buy?
+# Saudi Real Estate: What Can 1M SAR Buy?
 
 An interactive **Power BI** dashboard exploring Saudi **residential** real estate: how much
-property area a **SAR 1,000,000** budget represents, and how price per m², market activity,
+property area a **1,000,000 SAR** budget represents, and how price per m², market activity,
 and sales value compare across regions, cities, property types, and three Q1 snapshots.
 
 **🔗 Live dashboard:** https://app.powerbi.com/view?r=eyJrIjoiZDRjYjcxZTEtMDI5ZC00MWIzLTlmOWMtNzM3NjczYTRjYjFhIiwidCI6IjFkNDRmYjJiLWJjMmYtNDI1OS1hMzc3LWU4ZGY4Y2FjZTEzYiIsImMiOjl9
 
 ## Pages
 
-**Overview: What Can SAR 1M Buy?**
+**Overview: What Can 1M SAR Buy?**
 
 ![Overview](overview.png)
 
@@ -54,17 +54,17 @@ Total Sales Value = SUM(Sales_AllYears[TotalValue])
 Total Transactions = SUM(Sales_AllYears[TransactionCount])
 Total Area = SUM(Sales_AllYears[TotalArea])
 Price per Sqm = DIVIDE([Total Sales Value], [Total Area])
-Space for SAR 1M = DIVIDE(1000000, [Price per Sqm])
+Space for 1M SAR = DIVIDE(1000000, [Price per Sqm])
 ```
 
 ## Methodology note
 Price per m² is an **area-weighted ratio**: `SUM(TotalValue) / SUM(TotalArea)` for the current
 selection, computed from sums rather than by averaging neighborhood prices. It is **not** a median,
-a constant-quality price index, REGA's official indicator, or a valuation. *"Space for SAR 1M"*
+a constant-quality price index, REGA's official indicator, or a valuation. *"Space for 1M SAR"*
 is an **estimate**, not an actual listing or offer.
 
 ## Selected findings (Q1 2026, residential)
-Estimated m² a SAR 1M budget buys:
+Estimated m² a 1M SAR budget buys:
 
 | City | Apartments | Floors |
 |---|---|---|
